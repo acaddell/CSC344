@@ -65,9 +65,19 @@ public:
 		table[WAVETABLE_SIZE] = 0.0;
 	}
 
-	/*    void triangleInit(){
-
-	}*/
+	void sawInit(){
+		int temp = 0;
+		for (int i = 0; i < WAVETABLE_SIZE/2; i++){
+			table[i] = temp;
+			temp += 1 / (WAVETABLE_SIZE * 2);
+		}
+		temp *= -1;
+		for (int i = WAVETABLE_SIZE / 2; i < WAVETABLE_SIZE; i++){
+			table[i] = temp;
+			temp += 1 / (WAVETABLE_SIZE * 2);
+		}
+		table[WAVETABLE_SIZE] = 0.0;
+	}
 };
 
 //==============================================================================
@@ -84,7 +94,7 @@ public:
 		tailOff(0.0),
 		wavetable()
 	{
-		wavetable.squareInit();
+		wavetable.sawInit();
 	}
 
 	bool canPlaySound(SynthesiserSound* sound)
