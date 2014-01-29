@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="qRq8zl" name="SoftSynth" projectType="audioplug" version="1.0.0"
+              bundleIdentifier="com.yourcompany.SoftSynth" includeBinaryInAppConfig="1"
+              buildVST="1" buildAU="0" pluginName="SoftSynth" pluginDesc="SoftSynth"
+              pluginManufacturer="yourcompany" pluginManufacturerCode="Manu"
+              pluginCode="Plug" pluginChannelConfigs="{1, 1}, {2, 2}" pluginIsSynth="1"
+              pluginWantsMidiIn="1" pluginProducesMidiOut="0" pluginSilenceInIsSilenceOut="0"
+              pluginEditorRequiresKeys="0" pluginAUExportPrefix="SoftSynthAU"
+              pluginRTASCategory="" aaxIdentifier="com.yourcompany.SoftSynth"
+              pluginAAXCategory="AAX_ePlugInCategory_Dynamics" jucerVersion="3.1.0">
+  <MAINGROUP id="O3KW2r" name="SoftSynth">
+    <GROUP id="{78F77766-935D-6894-D994-8D10902A4C33}" name="Source">
+      <FILE id="PoZTrf" name="PluginProcessor.cpp" compile="1" resource="0"
+            file="Source/PluginProcessor.cpp"/>
+      <FILE id="mgJr0N" name="PluginProcessor.h" compile="0" resource="0"
+            file="Source/PluginProcessor.h"/>
+      <FILE id="h8sadN" name="PluginEditor.cpp" compile="1" resource="0"
+            file="Source/PluginEditor.cpp"/>
+      <FILE id="yGxko1" name="PluginEditor.h" compile="0" resource="0" file="Source/PluginEditor.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <VS2013 targetFolder="Builds/VisualStudio2013" vstFolder="c:\SDKs\VST3 SDK">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="1" optimisation="1" targetName="SoftSynth"/>
+        <CONFIGURATION name="Release" winWarningLevel="4" generateManifest="1" winArchitecture="32-bit"
+                       isDebug="0" optimisation="2" targetName="SoftSynth"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="C:/JUCE-master/modules"/>
+        <MODULEPATH id="juce_opengl" path="C:/JUCE-master/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="C:/JUCE-master/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="C:/JUCE-master/modules"/>
+        <MODULEPATH id="juce_graphics" path="C:/JUCE-master/modules"/>
+        <MODULEPATH id="juce_events" path="C:/JUCE-master/modules"/>
+        <MODULEPATH id="juce_data_structures" path="C:/JUCE-master/modules"/>
+        <MODULEPATH id="juce_cryptography" path="C:/JUCE-master/modules"/>
+        <MODULEPATH id="juce_core" path="C:/JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="C:/JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_plugin_client" path="C:/JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="C:/JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="C:/JUCE-master/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="C:/JUCE-master/modules"/>
+      </MODULEPATHS>
+    </VS2013>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_audio_plugin_client" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_cryptography" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="1"/>
+    <MODULES id="juce_video" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+  <JUCEOPTIONS JUCE_QUICKTIME="disabled"/>
+</JUCERPROJECT>
